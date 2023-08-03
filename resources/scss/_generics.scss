@@ -1,0 +1,15 @@
+@use '_vars' as *;
+
+body{
+    height: 100vh;
+    font-family: $font;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+ul{
+    list-style-type: none;
+}
