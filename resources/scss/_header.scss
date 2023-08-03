@@ -1,0 +1,46 @@
+@use 'vars' as *;
+
+header{
+
+    height: 100px;
+
+    #info-header{
+        height: 30px;
+        background-color: $main-color;
+        line-height: 30px;
+
+        ul{
+            display: flex;
+            justify-content:end ;
+            
+
+            color: $full-white;
+
+            li{
+                a{
+                    padding: 0 1rem;
+                    margin: 0 .5rem;
+                }
+            }
+        }
+    }
+
+    #header-nav{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        padding: .5rem 0;
+
+        ul{
+            display: flex;
+            a{
+                color: black;
+                font-weight: bold;
+                padding: 1rem;
+
+                text-transform: uppercase;
+            }
+        }
+    }
+}
