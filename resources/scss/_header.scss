@@ -20,6 +20,8 @@ header{
                 a{
                     padding: 0 1rem;
                     margin: 0 .5rem;
+
+                    font-size: .6rem;
                 }
             }
         }
@@ -27,10 +29,14 @@ header{
 
     #header-nav{
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
 
         padding: .5rem 0;
+
+        figure{
+            width: 70px;
+        }
 
         ul{
             display: flex;
@@ -39,8 +45,16 @@ header{
                 font-weight: bold;
                 padding: 1rem;
 
+                font-size: .8rem;
                 text-transform: uppercase;
             }
+        }
+
+        input{
+            text-align: end;
+            border: none;
+            border-bottom: 2px solid $main-color;
+            padding: .3rem;
         }
     }
 }
