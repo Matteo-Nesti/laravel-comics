@@ -16,8 +16,10 @@
             <div class="row">
                 @foreach ($comics as $comic)
                     <div class="card">
-                        <img src="{{ $comic['thumb'] }}" alt="">
-                        <h4>{{ $comic['series'] }}</h4>
+                        <a href="{{ route('product', ['index' => $loop->index]) }}">
+                            <img src="{{ $comic['thumb'] }}" alt="">
+                            <h4>{{ $comic['series'] }}</h4>
+                        </a>
                     </div>
                 @endforeach
             </div>

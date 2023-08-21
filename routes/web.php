@@ -15,9 +15,14 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
 
-    $links = ['characters', 'comics', 'movies', 'tv', 'games', 'collectibles', 'videos', 'fans', 'news', 'shop'];
-
     $comics = config('comics');
 
-    return view('home', ['links' => $links, 'comics' => $comics],);
+    return view('home', ['comics' => $comics]);
 })->name('home');
+
+
+Route::get('/product/{index}', function ($index) {
+    $products = config('comics');
+    $product = $products[$index];
+    return view('product', compact('product'));
+})->name('product');
