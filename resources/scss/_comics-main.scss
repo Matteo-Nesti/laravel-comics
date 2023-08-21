@@ -1,0 +1,54 @@
+@use 'vars' as *;
+
+#comics-section{   
+
+    background-color: $dark-grey;
+    padding-bottom: 25px;
+
+    .label{
+        padding: 1rem .7rem;
+        background-color: $main-color;
+        
+        color: $full-white;
+        text-align: center;
+        font-weight: bold;
+        
+        position: relative;
+        bottom: 30px;
+        left: 0;
+
+        width: 200px;
+    }
+
+    .row{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 0 -1rem;
+        
+
+        .card{
+            flex-basis: calc(100% / 6);
+            padding: 0 10px;
+            margin-bottom: 10px;
+            color: $full-white;
+
+            h4{
+                margin-top: 10px;
+            }
+        }
+    }
+
+    .load-btn{
+        background-color: $main-color;
+        
+        text-align: center;
+
+        margin: 0 auto;
+        padding: 15px 25px;
+
+        width: 150px;
+    }
+
+}
+

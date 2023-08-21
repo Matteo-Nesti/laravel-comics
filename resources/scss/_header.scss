@@ -2,13 +2,13 @@
 
 header{
 
-    height: 100px;
+    
 
     #info-header{
         height: 30px;
         background-color: $main-color;
         line-height: 30px;
-
+        
         ul{
             display: flex;
             justify-content:end ;
@@ -31,20 +31,25 @@ header{
         display: flex;
         justify-content: space-between;
         align-items: center;
+        
 
-        padding: .5rem 0;
+       
 
         figure{
-            width: 70px;
+            width: 60px;
+            padding-top: .4rem;
+            padding-bottom: .4rem;
         }
 
         ul{
             display: flex;
+
+            
             a{
                 color: black;
                 font-weight: bold;
-                padding: 1rem;
-
+                padding: 1.5rem 1rem;
+               // border-bottom: 4px solid $main-color;
                 font-size: .8rem;
                 text-transform: uppercase;
             }
@@ -55,6 +60,8 @@ header{
             border: none;
             border-bottom: 2px solid $main-color;
             padding: .3rem;
+
+            width: 100px;
         }
     }
 }

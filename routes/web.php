@@ -17,5 +17,7 @@ Route::get('/', function () {
 
     $links = ['characters', 'comics', 'movies', 'tv', 'games', 'collectibles', 'videos', 'fans', 'news', 'shop'];
 
-    return view('home', ['links' => $links]);
+    $comics = config('comics');
+
+    return view('home', ['links' => $links, 'comics' => $comics],);
 })->name('home');
